@@ -48,12 +48,12 @@ public class BallController : MonoBehaviour
         {
             this.scoreText.GetComponent<Score>().score += 3;
         }
-        else if (other.gameObject.tag)
+        else if (other.gameObject.tag=="LargeCloudTag")
         {
             this.scoreText.GetComponent<Score>().score += 10;
         }
 
-        this.scoreText.GetComponent<Text>().text = "Score" + this.scoreText.GetComponent<Score>().score;
+        this.scoreText.GetComponent<Text>().text = "Score : " + this.scoreText.GetComponent<Score>().score;
 
     }
 
